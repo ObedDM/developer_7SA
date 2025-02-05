@@ -1,0 +1,87 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color variables*/
+:root {
+    --main-color: #8358ff;
+    --body-color: #0d1120;
+    --container-color: #141740;
+    --text-color: #fff;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--body-color);
+
+}
+
+.nft-container{
+    height: 100vh;
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.nft-img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.nft-box{
+    background: var(--container-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    position: relative;
+}
+.title{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+.price{
+    font-size: 0.8rem;
+    margin: 0.5rem 0 1rem;
+}
+.buy-btn{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--main-color);
+    padding: 5px 8px;
+    border-radius: 5.5px;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+.buy-btn:hover{
+    background: hsl(240, 100%, 64%);
+    transition: 0.4s;
+}
+.swiper-pagination-bullet-active{
+    background: var(--main-color) !important;
+}
+@media (max-width:1070px){
+    .nft-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
