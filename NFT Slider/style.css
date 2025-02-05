@@ -30,6 +30,39 @@ body{
 
 }
 
+#collection_slag {
+    color: var(--text-color);
+    background: var(--container-color);
+    border: 1.5px solid var(--main-color);
+    outline: none;
+    border-radius: 7px;
+    padding: 10px;
+    padding-left: 45px;
+    margin-top: 1.5rem;
+    height: 3rem;
+    width: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+
+    background-image: url(images/Search.svg);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: 9px 4px;
+
+    transition: 0.2s ease-in-out;
+}
+
+#collection_slag:focus {
+    border: 2px solid var(--main-color);
+    background-color: #181032;
+    width: 400px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
+
 .nft-container{
     height: 100vh;
     max-width: 1060px;
