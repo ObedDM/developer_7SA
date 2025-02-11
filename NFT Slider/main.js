@@ -34,6 +34,7 @@ async function fetchNftData() {
     }});
 
     const data = await response.json();
+    console.log(data);
 
     return data
   }
@@ -45,7 +46,7 @@ async function fetchNftData() {
 
     for (let nft of data.nfts) {
 
-      let nft_price_data = await getPrice(nft.identifier);
+        await getPrice(nft.identifier);
 
         if (nft_price_data.available) {
             pricing = `From ${nft_price_data.listing_price} ${nft_price_data.coin_type}`;
@@ -66,7 +67,9 @@ async function fetchNftData() {
 
 async function getPrice(nft_id) {
 
-  let available = true;
+    let available = true;
+
+    console.log(nft_id, 'a');
 
     const response = await fetch(`https://api.opensea.io/api/v2/listings/collection/mutant-ape-yacht-club/nfts/${nft_id}/best`,
     {
@@ -77,7 +80,7 @@ async function getPrice(nft_id) {
         }
     });
 
-    const data = await response.json();
+    let data = await response.json();
 
     if (Object.keys(data).length === 0) {
         available = false;
@@ -94,6 +97,8 @@ async function getPrice(nft_id) {
 
         return {available, listing_price, coin_type};
     }
+
+        console.log(data);
 }
 
 displayData();
