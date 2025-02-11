@@ -342,6 +342,40 @@ img {
   background-color: var(--first-color-alt);
 }
 /*=============== ABOUT ===============*/
+.about{
+  background-color: var(--container-color);
+}
+
+.about__container{
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about__data{
+  position: relative;
+  text-align: center;
+}
+
+.about__data .section__title {
+  margin-bottom: 1rem;
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about__sticker {
+  width: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+}
+
+.about__img{
+  width: 320px;
+  justify-content: center;
+  filter: var(--shadow-big-img);
+}
 
 
 /*=============== POPULAR ===============*/
