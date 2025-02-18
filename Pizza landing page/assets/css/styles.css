@@ -444,6 +444,40 @@ img {
 
 
 /*=============== RECIPE ===============*/
+.reicpe {
+  background-color: var(--container-color);
+}
+
+.recipe__container {
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.recipe_img {
+  width: 60px;
+  filter: var(--shadow-small-img);
+}
+
+.recipe__name {
+  font-size: var(--normal-font-size);
+  margin-bottom: .25rem;
+}
+
+.recipe__description {
+  font-size: var(--small-font-size);
+}
+
+.recipe__ingredient {
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
+.recipe_img {
+  width: 320px;
+  justify-self: center;
+  filter: var(--shadow-big-img);
+}
 
 
 /*=============== PRODUCTS ===============*/
