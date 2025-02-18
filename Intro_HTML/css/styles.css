@@ -62,3 +62,12 @@ body {
         justify-content: space-between;
     }
 }
+
+.hero {
+    /* ../ regresa una carpeta en la ruta */
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+
+    /*Cover cubre la imagen con todo el tamaño posible*/
+    background-size: cover;
+}
