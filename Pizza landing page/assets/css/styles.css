@@ -229,6 +229,9 @@ img {
 
 
 /* Active link */
+.active-link::after {
+  width: 60%;
+}
 
 
 /*=============== HOME ===============*/
