@@ -1,4 +1,5 @@
 /*=============== SHOW MENU ===============*/
+/*Shows nav bar menu*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
@@ -16,6 +17,7 @@ if(navClose){
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
+/*Closes nav bar menu*/
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () =>{
@@ -26,15 +28,16 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*=============== ADD SHADOW HEADER ===============*/
+/*Adds a shadow into the header when scrolling down*/
 const shadowHeader = () =>{
     const header = document.getElementById('header')
-    // Add a class if the bottom offset is greater than 50 of the viewport
     this.scrollY >= 50 ? header.classList.add('shadow-header') 
                        : header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll', shadowHeader)
 
 /*=============== SWIPER POPULAR ===============*/
+/*Adds swiper animation into popular*/
 const swiperPopular = new Swiper('.popular__swiper', {
     loop: true,
     grabCursor: true,
@@ -43,6 +46,7 @@ const swiperPopular = new Swiper('.popular__swiper', {
   });
   
 /*=============== SHOW SCROLL UP ===============*/ 
+/*Uses a button to scroll up in y-axis*/
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up')
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')

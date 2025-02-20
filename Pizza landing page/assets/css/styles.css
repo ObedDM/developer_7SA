@@ -1,8 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
+/*this imports zaffron*/
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@100..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
-:root {
+:root { /*root-components*/
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
@@ -235,6 +236,7 @@ img {
 
 
 /*=============== HOME ===============*/
+/*Home section styling starts*/
 
 .home__container{
   padding-block: 2rem 3rem;
@@ -332,6 +334,7 @@ img {
 }
 
 /*=============== BUTTON ===============*/
+/*Home section button styling starts*/
 .button{
   display: inline-flex;
   justify-content: center;
@@ -348,6 +351,7 @@ img {
   background-color: var(--first-color-alt);
 }
 /*=============== ABOUT ===============*/
+/*about us section styling starts*/
 .about{
   background-color: var(--container-color);
 }
@@ -385,6 +389,7 @@ img {
 
 
 /*=============== POPULAR ===============*/
+/*Popular section styling starts*/
 .popular__container {
   grid-template-columns: 100%;
   row-gap: 3rem;
@@ -431,6 +436,7 @@ img {
 }
 
 /* Swiper class */
+/*Uses swiper for pizza sliding animation*/
 .swiper {
   margin-inline: initial;
   overflow: visible;
@@ -446,6 +452,7 @@ img {
 
 
 /*=============== RECIPE ===============*/
+/*Recipe (after popular section) styling starts*/
 .recipe {
   background-color: var(--container-color);
 }
@@ -483,6 +490,7 @@ img {
 
 
 /*=============== PRODUCTS ===============*/
+/*Products section styling starts*/
 
 .products__container {
   padding-top: 3.5rem;
@@ -521,6 +529,8 @@ img {
   color: var(--first-color);
 }
 
+/*Products button styling starts*/
+
 .products__button {
   position: absolute;
   right: .75rem;
@@ -545,6 +555,7 @@ img {
 }
 
 /*=============== CONTACT ===============*/
+/*Contact section styling starts*/
 
 .contact__container {
   position: relative;
@@ -640,6 +651,7 @@ img {
 
 
 /*=============== FOOTER ===============*/
+/*footer section styling starts*/
 .footer{
   padding-block: 4rem 2rem;
 }
@@ -727,6 +739,7 @@ img {
 }
 
 /*=============== SCROLL BAR ===============*/
+/*Scroll bar starts here*/
 ::-webkit-scrollbar{
   width: 0.6rem;
   background-color: hsl(24, 32%, 75%);
@@ -741,6 +754,7 @@ img {
 }
 
 /*=============== SCROLL UP ===============*/
+/*scrollup starts here*/
 .scrollup {
   position: fixed;
   right: 1rem;
@@ -767,6 +781,7 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
+/*Added breakpoints so theres responsive design for all devices*/
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container{
@@ -795,6 +810,7 @@ img {
 }
 
 /* For medium devices */
+/*Same here as the last but using higher min-width*/
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
@@ -820,6 +836,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  /*Uses a higher min-width*/
   .popular__swiper {
     width: 600px;
     overflow-x: clip;
@@ -849,7 +866,7 @@ img {
 
 }
 /* For large devices */
-
+/*higher min-width adapted to larger devices*/
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
