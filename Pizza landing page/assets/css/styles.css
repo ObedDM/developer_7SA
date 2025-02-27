@@ -348,7 +348,7 @@ img {
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: black;
 }
 /*=============== ABOUT ===============*/
 /*about us section styling starts*/
@@ -1059,7 +1059,7 @@ img {
     grid-template-columns: 370px 350px;
     justify-content: center;
     column-gap: 6rem;
-    border-radius: 4rem;
+    border-radius: 6rem;
   }
   .contact__img{
     width: 350px;

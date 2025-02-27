@@ -9,7 +9,31 @@
 html {
     font-size: 62.5%;
     font-family: Krub, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/*Tipografia*/
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
 
 body {
     font-size: 16px;
@@ -70,4 +94,53 @@ body {
 
     /*Cover cubre la imagen con todo el tamaño posible*/
     background-size: cover;
+    height: 450px; /*altura del hero*/
+
+    position: relative /*manipular la posicion, el padre (.hero) siempre debe ser relative*/
+}
+
+.contenido-hero {
+    position: absolute; /*el hijo debe ser absolute (.contenido-hero)*/
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+
+    /*alinear vertical y horizontalmente*/
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    
+    font-weight: bold; /* o un valor eg: 800*/
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 80%;
+    border-radius: .5rem;
+
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
 }
