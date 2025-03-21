@@ -144,3 +144,37 @@ body {
         width: auto;
     }
 }
+
+/* Mis servicios */
+@media (min-width: 768px){
+    .servicios{
+        display: grid; /* poner el contentenido en grillas*/
+        /*grid-template-columns: 1fr 1fr 1fr; columnas de la grilla | se le ponen 3 columnas | si solo se especifican 2 y hay 3 elementos el tercero lo pone debajo*/
+        /*xfr | fr para crear las columnas, X cuantos espacios va tener entre ellas | por fraccion*/
+        /*grid-template-columns: 33.33% 33.33% 33.33% | 15% 25% 30% ; por porcentaje*/
+        grid-template-columns: repeat(3,1fr); /* repetir X veces | xfr*/   
+    }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+.servicio p{
+    line-height: 2; /*interlineado del texto*/
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    display: flex;
+    border-radius: 100%; /*hacer que sea un circulo*/
+    /*espaciado uniforme -----------desde squi le copian*/
+    justify-content: center;
+    align-items: center;
+}
