@@ -100,41 +100,43 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam quidem fuga dolorum necessitatibus et error, repellat est placeat vero quaerat porro officia blanditiis architecto cumque. Eum velit voluptas soluta.</p>    
         </section>
         </div> <!-- Cierre de servicios -->
-    </main>
-
+    
     <section>
         <h2>Contacto</h2>
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend>Llena tus datos para establecer contacto</legend>
-                    <div>
+                <div class="contenedor-campos">
+                    <div class="campo">
                         <label>Nombre</label>
                         <input type="text" placeholder="Tu nombre">
                     </div>
 
-                    <div>
+                    <div class="campo">
                         <label>Telefono</label>
                         <input type="tel" placeholder="9999023345">
                     </div>
 
-                    <div>
+                    <div class="campo">
                         <label>Correo</label>
                         <input type="email" placeholder="hola@example">
                     </div>
 
-                    <div>
+                    <div class="campo">
                         <label>Mensaje</label>
                         <textarea></textarea>
                     </div>
 
-                    <div>
-                        <input type="submit" value="Enviar">
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
+                </div>
             </fieldset>
         </form>
     </section>
+    </main>
 
-    <footer>
+    <footer class="footer">
         <p>Derechos Reservados 2025 © yo</p>
     </footer>
 
